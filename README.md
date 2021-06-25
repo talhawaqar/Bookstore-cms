@@ -1,4 +1,4 @@
-# Calculator App
+# Bookstore CMS
 
 This project is a bookstore CMS build using react components. it is currently in-progress
 
