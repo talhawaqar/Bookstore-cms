@@ -1,4 +1,4 @@
-import { CREATE_BOOK, FETCH_BOOKS } from './types';
+import { CREATE_BOOK, EDIT_BOOK } from './types';
 
 export const createBook = (book) => {
   return {
@@ -7,9 +7,10 @@ export const createBook = (book) => {
   };
 };
 
-export const fetchBooks = () => {
+export const editBook = (book) => {
   return {
-    type: FETCH_BOOKS
+    type: EDIT_BOOK,
+    payload: book
   };
 };
 
