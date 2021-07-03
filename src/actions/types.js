@@ -1,5 +1,5 @@
 export const CREATE_BOOK = 'CREATE_BOOK';
-export const EDIT_BOOK = 'EDIT_BOOK';
+export const REMOVE_BOOK = 'REMOVE_BOOK';
 
 const id1 = Math.floor(Math.random() * 100);
 const id2 = Math.floor(Math.random() * 100);
