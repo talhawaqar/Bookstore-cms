@@ -13,7 +13,7 @@ const Book = (props) => {
 };
 
 Book.propTypes = {
-  id: PropTypes.string,
+  id: PropTypes.number,
   category: PropTypes.string,
   title: PropTypes.string,
 };
