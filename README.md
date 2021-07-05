@@ -35,9 +35,9 @@ This project is a bookstore CMS build using react components. it is currently in
 
 👤 **Muhammad Talha Waqar**
 
-- Github: [@TalhaWaqar](https://github.com/talhawaqar)
+- Github: [talhaWaqar](https://github.com/talhawaqar)
 - Linkedin: [@TalhaWaqar](https://www.linkedin.com/in/talhawaqar/)
-- E-mail: <a href="mailto:talhawaqar007@gmail.com?subject=Hello Talha!">Email</a>
+- E-mail: <a href="mailto:talhawaqar007@gmail.com?subject=Hello Talha!">talhawaqar007@gmail.com</a>
 - Twitter: [@TalhaWaqar](https://twitter.com/MuhammadTalhaW4)
 
 ## Available Scripts
