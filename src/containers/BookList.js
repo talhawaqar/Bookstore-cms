@@ -5,11 +5,15 @@ import Book from '../components/Book';
 import { removeBook } from '../actions';
 
 const BookList = (props) => {
+  const handleRemoveBook = (book) => {
+    props.removeBook(book);
+  };
+
   const renderList = () => {
     const { books } = props;
     /* eslint-disable max-len */
     return (
-      books.map((book) => <Book key={book.id} id={book.id} category={book.category} title={book.title} removeBook={props.removeBook} />)
+      books.map((book) => <Book key={book.id} id={book.id} category={book.category} title={book.title} handleRemoveBook={handleRemoveBook} />)
     );
     /* eslint-enable max-len */
   };

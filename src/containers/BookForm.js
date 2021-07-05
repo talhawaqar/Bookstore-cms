@@ -14,12 +14,12 @@ class BookForm extends React.Component {
   renderCategoriesOptions = () => OPTIONS.map((option) => <option key={option} value={option}>{option}</option>)
   /* eslint-enable max-len */
 
-  onTitleChange = (e) => {
-    this.setState({ title: e.target.value });
-  }
-
-  onCategorySelectChange = (e) => {
-    this.setState({ category: e.target.value });
+  handleChange = (e) => {
+    if (e.target.tagName === 'INPUT' && e.target.getAttribute('type') === 'text') {
+      this.setState({ title: e.target.value });
+    } else if (e.target.tagName === 'SELECT') {
+      this.setState({ category: e.target.value });
+    }
   }
 
   onFormSubmit = (e) => {
@@ -27,8 +27,7 @@ class BookForm extends React.Component {
     const id = Math.floor(Math.random() * 100);
     const book = { ...this.state, id };
     const { createBook } = this.props;
-    createBook({ ...this.state, id });
-    console.log(book);
+    createBook(book);
   }
 
   render() {
@@ -38,12 +37,12 @@ class BookForm extends React.Component {
         <h3>Add another book</h3>
         <form onSubmit={this.onFormSubmit}>
           <input
-            onChange={this.onTitleChange}
+            onChange={this.handleChange}
             type="text"
             value={title}
             placeholder="Enter Title"
           />
-          <select name="categories" onChange={this.onCategorySelectChange} id="categories">
+          <select name="categories" onChange={this.handleChange} id="categories">
             {this.renderCategoriesOptions()}
           </select>
           <input type="submit" />
