@@ -19,12 +19,12 @@ const BookList = (props) => {
     return books.map((book) => {
       if (filter === '') {
         return (
-          <Book 
+          <Book
             key={book.id}
             id={book.id}
             category={book.category}
             title={book.title}
-            handleRemoveBook={handleRemoveBook} 
+            handleRemoveBook={handleRemoveBook}
           />
         );
       }
