@@ -2,23 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { OPTIONS } from '../actions/types';
 
-const CategoryFilter = (props) =>{
-
+const CategoryFilter = (props) => {
   /* eslint-disable max-len */
-  const renderFilterOptions = () => OPTIONS.map((option) => <option key={option} value={option}>{option}</option>)
+  const renderFilterOptions = () => OPTIONS.map((option) => <option key={option} value={option}>{option}</option>);
   /* eslint-enable max-len */
-  
+
   const handleChange = (e) => {
     props.handleFilterChange(e.target.value);
-  }
+  };
 
   return (
     <select name="categories" onChange={handleChange} id="categories">
-        <option key='all' value='' >All</option>
-        {renderFilterOptions()}
+      <option key="all" value="">All</option>
+      {renderFilterOptions()}
     </select>
   );
-}
+};
 
 CategoryFilter.propTypes = {
   handleFilterChange: PropTypes.func,

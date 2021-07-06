@@ -12,17 +12,34 @@ const BookList = (props) => {
 
   const handleFilterChange = (filter) => {
     props.changeFilter(filter);
-  }
+  };
 
   const renderList = () => {
     const { books, filter } = props;
-    return books.map((book)=>{
-      if(filter === ''){
-        return <Book key={book.id} id={book.id} category={book.category} title={book.title} handleRemoveBook={handleRemoveBook} />
+    return books.map((book) => {
+      if (filter === '') {
+        return (
+          <Book 
+            key={book.id}
+            id={book.id}
+            category={book.category}
+            title={book.title}
+            handleRemoveBook={handleRemoveBook} 
+          />
+        );
       }
-      else if(filter === book.category) {
-        return <Book key={book.id} id={book.id} category={book.category} title={book.title} handleRemoveBook={handleRemoveBook} />
+      if (filter === book.category) {
+        return (
+          <Book
+            key={book.id}
+            id={book.id}
+            category={book.category}
+            title={book.title}
+            handleRemoveBook={handleRemoveBook}
+          />
+        );
       }
+      return '';
     });
   };
 
@@ -47,12 +64,14 @@ const BookList = (props) => {
 
 BookList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object),
+  filter: PropTypes.string,
   removeBook: PropTypes.func,
   changeFilter: PropTypes.func,
 };
 
 BookList.defaultProps = {
   books: [{}],
+  filter: '',
   removeBook: () => {},
   changeFilter: () => {},
 };
