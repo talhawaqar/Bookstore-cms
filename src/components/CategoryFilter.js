@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { OPTIONS } from '../actions/types';
 
 const CategoryFilter = (props) =>{
@@ -8,7 +9,7 @@ const CategoryFilter = (props) =>{
   /* eslint-enable max-len */
   
   const handleChange = (e) => {
-    console.log(e.target.value);
+    props.handleFilterChange(e.target.value);
   }
 
   return (
@@ -18,5 +19,13 @@ const CategoryFilter = (props) =>{
     </select>
   );
 }
+
+CategoryFilter.propTypes = {
+  handleFilterChange: PropTypes.func,
+};
+
+CategoryFilter.defaultProps = {
+  handleFilterChange: () => {},
+};
 
 export default CategoryFilter;
