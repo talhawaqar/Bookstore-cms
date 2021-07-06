@@ -14,7 +14,7 @@ const CategoryFilter = (props) =>{
 
   return (
     <select name="categories" onChange={handleChange} id="categories">
-        <option key='all' value={null} >All</option>
+        <option key='all' value='' >All</option>
         {renderFilterOptions()}
     </select>
   );

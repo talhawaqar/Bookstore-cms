@@ -15,12 +15,15 @@ const BookList = (props) => {
   }
 
   const renderList = () => {
-    const { books } = props;
-    /* eslint-disable max-len */
-    return (
-      books.map((book) => <Book key={book.id} id={book.id} category={book.category} title={book.title} handleRemoveBook={handleRemoveBook} />)
-    );
-    /* eslint-enable max-len */
+    const { books, filter } = props;
+    return books.map((book)=>{
+      if(filter === ''){
+        return <Book key={book.id} id={book.id} category={book.category} title={book.title} handleRemoveBook={handleRemoveBook} />
+      }
+      else if(filter === book.category) {
+        return <Book key={book.id} id={book.id} category={book.category} title={book.title} handleRemoveBook={handleRemoveBook} />
+      }
+    });
   };
 
   return (
@@ -54,6 +57,6 @@ BookList.defaultProps = {
   changeFilter: () => {},
 };
 
-const mapStateToProps = (state) => ({ books: Object.values(state.books) });
+const mapStateToProps = (state) => ({ books: Object.values(state.books), filter: state.filter });
 
 export default connect(mapStateToProps, { removeBook, changeFilter })(BookList);
