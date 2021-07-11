@@ -164,3 +164,53 @@
   margin-top: 12px;
   border: none;
 }
+
+.form-container h3 {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888888;
+}
+
+.form-container input[type="text"] {
+  width: 600px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: solid 1px #e8e8e8;
+  padding: 5px 12px;
+  display: inline-block;
+  color: #c4c4c4;
+  margin-right: 20px;
+}
+
+.form-container select {
+  width: 400px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: solid 1px #e8e8e8;
+  padding: 9px 12px;
+  display: inline-block;
+  color: #c4c4c4;
+  margin-right: 20px;
+}
+
+.form-container input[type="submit"] {
+  font-family: RobotoSlab;
+  width: 250px;
+  padding: 6px;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  background-color: #0290ff;
+  margin-top: 12px;
+  border: none;
+}
+
+.footer h3 {
+  color: #c4c4c4;
+}
