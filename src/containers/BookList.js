@@ -46,18 +46,7 @@ const BookList = (props) => {
   return (
     <>
       <CategoryFilter handleFilterChange={handleFilterChange} />
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {renderList()}
-        </tbody>
-      </table>
+      {renderList()}
     </>
   );
 };
