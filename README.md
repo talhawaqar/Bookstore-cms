@@ -4,7 +4,7 @@ This project is a bookstore CMS build using react components. it is currently in
 
 ### Screenshot
 
-![comming soom]()
+![](/public/Screenshot.png)
 
 ## 🔧 Built with
 
