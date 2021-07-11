@@ -6,7 +6,7 @@
 .navbar-brand {
   width: 15rem !important;
   height: 2.313rem !important;
-  font-family: Montserrat !important;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 1.875rem !important;
   font-weight: bold !important;
   color: #0290ff !important;
@@ -19,7 +19,7 @@
 
 .books {
   display: inline-block !important;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 20px;
   letter-spacing: 1.9px;
   color: #121212 !important;
@@ -36,7 +36,7 @@
   font-size: 20px;
   width: 150px;
   margin-top: 27px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif !important;
   letter-spacing: 1.9px;
   color: #121212;
 }
@@ -52,20 +52,20 @@
   margin: 0;
   color: #121212;
   font-weight: bold;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 16px;
 }
 
 .title {
   margin: 0;
   color: #121212;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 24px;
 }
 
 .author {
   margin: 0;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif !important;
   color: #0290ff;
   font-size: 14px;
 }
@@ -120,7 +120,7 @@
 
 .progress-text h3 {
   margin: 0 0 4px 15px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 32px;
   color: #121212;
 }
@@ -128,7 +128,7 @@
 .progress-text h4 {
   margin-left: 15px;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 14px;
   color: #121212;
 }
@@ -136,14 +136,14 @@
 .chapter h3 {
   margin-top: 3px;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 13px;
   font-weight: 300;
   color: #121212;
 }
 
 .chapter h2 {
-  font-family: RobotoSlab;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.4px;
@@ -152,7 +152,7 @@
 }
 
 .chapter input {
-  font-family: RobotoSlab;
+  font-family: "Montserrat", sans-serif !important;
   width: 200px;
   padding: 7px;
   font-size: 12px;
@@ -166,11 +166,11 @@
 }
 
 .form-container h3 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 30px;
   font-weight: bold;
   letter-spacing: -0.18px;
-  color: #888888;
+  color: #888;
 }
 
 .form-container input[type="text"] {
@@ -198,7 +198,7 @@
 }
 
 .form-container input[type="submit"] {
-  font-family: RobotoSlab;
+  font-family: "Montserrat", sans-serif !important;
   width: 250px;
   padding: 6px;
   font-size: 20px;
