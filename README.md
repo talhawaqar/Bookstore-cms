@@ -1,6 +1,6 @@
 # Bookstore CMS
 
-This project is a bookstore CMS build using react components. it is currently in-progress
+This project is a bookstore CMS build using react components. You can add books to the list and filter books category-wise.
 
 ### Screenshot
 
