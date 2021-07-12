@@ -36,6 +36,7 @@ const Book = (props) => {
             <h3>50%</h3>
             <h4>Completed</h4>
           </div>
+          <div className="verticle-line" />
         </div>
         <div className="chapter col-4 d-flex flex-column justify-content-center">
           <h3>CURRENT CHAPTER</h3>

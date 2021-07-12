@@ -4,7 +4,7 @@ This project is a bookstore CMS build using react components. You can add books 
 
 ### Screenshot
 
-![](./public/Screenshot.png)
+![](/public/Screenshot.png)
 
 ## 🔧 Built with
 
@@ -61,10 +61,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn test`
-
-Run the test cases
 
 ### `yarn eject`
 

@@ -214,3 +214,14 @@
 .footer h3 {
   color: #c4c4c4;
 }
+
+.verticle-line {
+  width: 2px;
+  height: 100px;
+  background-color: #e8e8e8;
+  margin-left: 35px;
+}
+
+.verticle-line:hover {
+  background-color: #0290ff;
+}
