@@ -4,7 +4,7 @@ This project is a bookstore CMS build using react components. You can add books 
 
 ### Screenshot
 
-![](/public/Screenshot.png)
+![](/public/screenshot.png)
 
 ## 🔧 Built with
 
