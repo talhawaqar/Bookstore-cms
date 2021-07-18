@@ -1,10 +1,10 @@
 # Bookstore CMS
 
-This project is a bookstore CMS build using react components. it is currently in-progress
+This project is a bookstore CMS build using react components. You can add books to the list and filter books category-wise.
 
 ### Screenshot
 
-![comming soom]()
+![](/public/screenshot.png)
 
 ## 🔧 Built with
 
@@ -61,10 +61,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn test`
-
-Run the test cases
 
 ### `yarn eject`
 

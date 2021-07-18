@@ -33,8 +33,8 @@ class BookForm extends React.Component {
   render() {
     const { title } = this.state;
     return (
-      <div>
-        <h3>Add another book</h3>
+      <div className="form-container mt-4 mb-5 container">
+        <h3>Add New Book</h3>
         <form onSubmit={this.onFormSubmit}>
           <input
             onChange={this.handleChange}
